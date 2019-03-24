@@ -1,7 +1,10 @@
 package com.lahzouz.addok.domain
 
+import io.quarkus.runtime.annotations.RegisterForReflection
+
+@RegisterForReflection
 data class Feature(
-        val geometry: Geometry?,
-        val properties: Properties?,
-        val type: String?
+        var geometry: Geometry?,
+        var properties: Properties?,
+        var type: String?
 )

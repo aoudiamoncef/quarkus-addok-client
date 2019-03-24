@@ -1,6 +1,9 @@
 package com.lahzouz.addok.domain
 
+import io.quarkus.runtime.annotations.RegisterForReflection
+
+@RegisterForReflection
 data class Geometry(
-        val coordinates: List<Double?>?,
-        val type: String?
+        var coordinates: List<Double?>?,
+        var type: String?
 )

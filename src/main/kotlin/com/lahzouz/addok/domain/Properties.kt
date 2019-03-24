@@ -1,13 +1,16 @@
 package com.lahzouz.addok.domain
 
+import io.quarkus.runtime.annotations.RegisterForReflection
+
+@RegisterForReflection
 data class Properties(
-        val city: String?,
-        val context: String?,
-        val housenumber: String?,
-        val id: String?,
-        val label: String?,
-        val name: String?,
-        val postcode: String?,
-        val score: Double?,
-        val type: String?
+        var city: String?,
+        var context: String?,
+        var housenumber: String?,
+        var id: String?,
+        var label: String?,
+        var name: String?,
+        var postcode: String?,
+        var score: Double?,
+        var type: String?
 )

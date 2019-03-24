@@ -133,6 +133,7 @@
             <option>all-open:annotation=org.springframework.stereotype.Service</option>
             <option>all-open:annotation=org.springframework.stereotype.Component</option>
             <option>all-open:annotation=org.springframework.context.annotation.Configuration</option>
+            <option>all-open:annotation=io.quarkus.runtime.annotations.RegisterForReflection</option>
           </pluginOptions>
         </configuration>
       </plugin>

@@ -1,10 +1,13 @@
 package com.lahzouz.addok.domain
 
+import io.quarkus.runtime.annotations.RegisterForReflection
+
+@RegisterForReflection
 data class Addok(
-        val attribution: String?,
-        val features: List<Feature?>?,
-        val licence: String?,
-        val query: String?,
-        val type: String?,
-        val version: String?)
+        var attribution: String?,
+        var features: List<Feature?>?,
+        var licence: String?,
+        var query: String?,
+        var type: String?,
+        var version: String?)
 
